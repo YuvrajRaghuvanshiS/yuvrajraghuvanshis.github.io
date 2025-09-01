@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuvraj Raghuvanshi | Software Engineer & AI Researcher</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">YR</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work & Research</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Profile Picture -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-main">
+                <div class="hero-text">
+                    <h1>Yuvraj Raghuvanshi</h1>
+                    <h2>Software Engineer & AI Researcher</h2>
+                    <p>Final Year M.Tech at IIT Kanpur | Building scalable systems and advancing AI research</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary">Get In Touch</a>
+                        <a href="#work" class="btn-secondary">View Work</a>
+                        <a href="resume.pdf" class="btn-resume" download="Yuvraj_Raghuvanshi_Resume.pdf">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/YuvrajRaghuvanshiS" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/YuvrajRaghuvanshiS" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:YuvrajRaghuvanshi.S@protonmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-image">
+                        <img src="assets/me.png" alt="Yuvraj Raghuvanshi" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="placeholder-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Achievement Stats Integrated in Hero -->
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <h3>8.57</h3>
+                    <p>CPI at IIT Kanpur</p>
+                </div>
+                <div class="hero-stat">
+                    <h3>3+</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="hero-stat">
+                    <h3>520+</h3>
+                    <p>GitHub Stars</p>
+                </div>
+                <div class="hero-stat">
+                    <h3>157th</h3>
+                    <p>GATE CS Rank</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section with Education -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p>Passionate software engineer and AI researcher specializing in scalable systems, NLP, and computer vision. Currently pursuing M.Tech at IIT Kanpur while maintaining strong industry connections through practical projects and research.</p>
+                    <p>My expertise spans from architecting microservices for startups to developing cutting-edge AI models, with a focus on translating research into real-world applications.</p>
+                </div>
+                
+                <div class="education-skills-grid">
+                    <div class="education-summary">
+                        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                        <div class="education-item">
+                            <div>
+                                <strong>M.Tech Computer Science</strong>
+                                <span class="institute">IIT Kanpur</span>
+                            </div>
+                            <span class="grade">8.57/10</span>
+                        </div>
+                        <div class="education-item">
+                            <div>
+                                <strong>B.Tech</strong>
+                                <span class="institute">ABES Institute</span>
+                            </div>
+                            <span class="grade">7.59/10</span>
+                        </div>
+                    </div>
+                    
+                    <div class="quick-skills">
+                        <h3><i class="fas fa-code"></i> Core Skills</h3>
+                        <div class="skill-tags">
+                            <span>Python</span>
+                            <span>AI/ML</span>
+                            <span>AWS</span>
+                            <span>Docker</span>
+                            <span>React</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Combined Work & Research Section with Tabs -->
+    <section id="work" class="work-section">
+        <div class="container">
+            <h2 class="section-title">Work & Research</h2>
+            
+            <!-- Tab Navigation -->
+            <div class="tab-navigation">
+                <button class="tab-btn active" onclick="switchTab('experience')">Experience</button>
+                <button class="tab-btn" onclick="switchTab('research')">Research</button>
+                <button class="tab-btn" onclick="switchTab('projects')">Projects</button>
+            </div>
+            
+            <!-- Experience Tab -->
+            <div id="experience-tab" class="tab-content active">
+                <div class="experience-timeline">
+                    <div class="timeline-item current">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Silent Partner / Shareholder</h3>
+                                <span class="timeline-date">Jun 25 - Present</span>
+                            </div>
+                            <h4>Nyay Setuu AI Pvt. Ltd.</h4>
+                            <p>Architected legal-tech platform infrastructure with real-time systems using Firebase and Agora SDK.</p>
+                            <div class="tech-tags">
+                                <span>Firebase</span>
+                                <span>Agora SDK</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Software Engineer</h3>
+                                <span class="timeline-date">Dec 23 - May 24</span>
+                            </div>
+                            <h4>Sixdis Tech (Oolka.in)</h4>
+                            <p>Credit-analysis platform maintenance and feature development with smooth product transitions.</p>
+                            <div class="tech-tags">
+                                <span>Python</span>
+                                <span>Django</span>
+                                <span>FinTech</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Software Engineer</h3>
+                                <span class="timeline-date">Apr 23 - Nov 23</span>
+                            </div>
+                            <h4>Rupymart Tech</h4>
+                            <p>Built RESTful APIs, automated credit bureau integration, migrated JS codebase to Python3.</p>
+                            <div class="tech-tags">
+                                <span>FastAPI</span>
+                                <span>AWS</span>
+                                <span>ML Integration</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Software Engineer</h3>
+                                <span class="timeline-date">Nov 21 - Oct 22</span>
+                            </div>
+                            <h4>Vectoscalar Tech</h4>
+                            <p>Scalable microservices with 99.9% uptime, AWS Lambda optimization, MongoDB design.</p>
+                            <div class="tech-tags">
+                                <span>Flask</span>
+                                <span>AWS Lambda</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Research Tab -->
+            <div id="research-tab" class="tab-content">
+                <div class="research-grid">
+                    <div class="research-card featured">
+                        <div class="research-status ongoing">Ongoing</div>
+                        <h3>Poetry Generation in Hindi Language</h3>
+                        <p class="research-meta">Prof. Arnab Bhattacharya, IIT Kanpur</p>
+                        <p>Fine-tuning IndicBERT and transformer models for Hindi poetry generation using large-scale literature datasets.</p>
+                        <div class="tech-tags">
+                            <span>IndicBERT</span>
+                            <span>LLM Fine-tuning</span>
+                            <span>NLP</span>
+                        </div>
+                    </div>
+                    
+                    <div class="research-card featured">
+                        <div class="research-status paper">WACV 2026</div>
+                        <h3>DoodleVision</h3>
+                        <p class="research-meta">Prof. Priyanka Bagade, IIT Kanpur</p>
+                        <p>Hybrid model achieving <strong>89.41% accuracy (+5% over benchmark)</strong>. Paper under preparation for WACV 2026.</p>
+                        <div class="tech-tags">
+                            <span>Deep Learning</span>
+                            <span>Multimodal Fusion</span>
+                            <span>Edge Deployment</span>
+                        </div>
+                    </div>
+                    
+                    <div class="research-card">
+                        <div class="research-status completed">Completed</div>
+                        <h3>EarlAz: Alzheimer's Detection</h3>
+                        <p class="research-meta">Prof. Veena Bharti, ABESIT</p>
+                        <p>Mobile game for cognitive data collection with ML classifiers for early-stage detection.</p>
+                        <div class="tech-tags">
+                            <span>Unity3D</span>
+                            <span>SVM</span>
+                            <span>Decision Tree</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projects Tab -->
+            <div id="projects-tab" class="tab-content">
+                <div class="projects-grid">
+                    <div class="project-card featured">
+                        <div class="project-stats">
+                            <span>520+ ⭐</span>
+                            <span>70+ 🍴</span>
+                            <span>500K+ 👁️</span>
+                        </div>
+                        <h3>WhatsApp Key/Database Extractor</h3>
+                        <p>Forensic tool for Android WhatsApp data extraction with significant open-source adoption.</p>
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>Android</span>
+                            <span>Digital Forensics</span>
+                        </div>
+                        <a href="https://github.com/YuvrajRaghuvanshiS/WhatsApp-Key-Database-Extractor" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Source
+                        </a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>Blockchain Ticketing System</h3>
+                        <p>Smart contract-based platform preventing double-booking with verifiable records.</p>
+                        <div class="tech-tags">
+                            <span>Hyperledger Fabric</span>
+                            <span>Smart Contracts</span>
+                            <span>Node.js</span>
+                        </div>
+                        <a href="https://github.com/YuvrajRaghuvanshiS/mytravel" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Source
+                        </a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>Deepfake Detection Platform</h3>
+                        <p>Video authenticity analysis with user feedback aggregation and trend analysis.</p>
+                        <div class="tech-tags">
+                            <span>Computer Vision</span>
+                            <span>User Analytics</span>
+                            <span>TF-IDF</span>
+                        </div>
+                        <a href="https://raw.githubusercontent.com/YuvrajRaghuvanshiS/resume/refs/heads/master/documents/cs685_proj_report.pdf" target="_blank" class="project-link">
+                            <i class="fab fa-google-drive"></i> View Report
+                        </a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>AmazoLens Analytics</h3>
+                        <p>E-commerce dashboard with ML-powered recommendations and market analysis.</p>
+                        <div class="tech-tags">
+                            <span>Data Visualization</span>
+                            <span>D3.js</span>
+                            <span>Recommendation Systems</span>
+                        </div>
+                        <a href="https://github.com/YuvrajRaghuvanshiS/resume/raw/refs/heads/master/documents/cs661_proj_report.pdf" target="_blank" class="project-link">
+                            <i class="fab fa-google-drive"></i> View Report
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section - Compact -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="skills-compact">
+                <div class="skill-group">
+                    <h3>Languages</h3>
+                    <div class="skill-items">
+                        <span>Python</span><span>C++</span><span>JavaScript</span><span>C#</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>AI/ML</h3>
+                    <div class="skill-items">
+                        <span>TensorFlow</span><span>PyTorch</span><span>IndicBERT</span><span>Computer Vision</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Backend</h3>
+                    <div class="skill-items">
+                        <span>FastAPI</span><span>Django</span><span>Flask</span><span>Node.js</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Database</h3>
+                    <div class="skill-items">
+                        <span>PostgreSQL</span><span>MongoDB</span><span>MySQL</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Cloud/DevOps</h3>
+                    <div class="skill-items">
+                        <span>AWS</span><span>Docker</span><span>Kubernetes</span><span>CI/CD</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Frontend</h3>
+                    <div class="skill-items">
+                        <span>React</span><span>Express.js</span><span>D3.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title">Let's Connect</h2>
+                <p>Ready to discuss opportunities, collaborations, or innovative projects?</p>
+                
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>yuvrajpr24@cse.iitk.ac.in</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91-8126744709</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>RM 302, IIT Kanpur, India</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional Resume Download in Footer -->
+                <div class="footer-resume">
+                    <a href="resume.pdf" class="btn-resume-footer" download="Yuvraj_Raghuvanshi_Resume.pdf">
+                        <i class="fas fa-file-pdf"></i> Download Full Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
